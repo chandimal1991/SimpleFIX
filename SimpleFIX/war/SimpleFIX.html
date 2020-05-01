@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="SimpleFIX.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Simple FIX</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="simplefix/simplefix.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+    <h1>Simple FIX</h1>
+    <div id="mainArea">
+	    <div class="innerComponents">
+            
+            <select id="sessionBtn" name="users" style="width: 161px; height: 48px; ">
+                <option value="Session1">Select Session</option>
+                <option value="Session1">Test Session1</option>
+                <option value="Session2">Test Session 2</option>
+                <option value="Session3">Test Session 3</option>
+                <option value="Session4">Test Session 4</option>
+            </select>
+            <select id="users" name="users" style="width: 161px; height: 48px; ">
+                <option value="User1">Select User</option>
+                <option value="User1">Test User 1</option>
+                <option value="User2">Test User 2</option>
+                <option value="User3">Test User 3</option>
+                <option value="User4">Test User 4</option>
+            </select>
+			<br>
+			<br>
+            <input id="createBtn" type="button" value="Create">
+            <br>
+			<br>
+            <textarea id="createText" rows="30" cols="120" style="resize: vertical;">
+            
+        </textarea>
+            <br>
+            <input id="sessionBtn2" type="button" value="Send CSV" >
+            <input id="sessionBtn2" type="button" value="Download Log File">
+        <br> 
+		<br>
+        <label for="result">Sent Status</label> <br>
+        <textarea disabled id="resultText" rows="5" cols="120" style="resize: vertical;">
+            
+        </textarea>
+        <br>
+        <input id="sessionBtn" type="button" value="Amend">
+
+        </div>
+	</div>
+
+  </body>
+</html>

@@ -1,0 +1,2 @@
+serviceClass: com.nss.client.FixGatewayService
+path: 5880C45DB863DDB0759A208891BC01B9.gwt.rpc
